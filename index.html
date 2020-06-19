@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="libs/swiper.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Охотники за привидениями: Наследники</title>
 </head>
@@ -121,11 +122,11 @@
 		<section class="cast">
 			<div class="container">
 				<div class="tabs">
-					<h2 class="section-title active">Актеры</h2>
-					<h2 class="section-title">Создатели</h2>
+					<h2 class="tab section-title active" data-target="#actors">Актеры</h2>
+					<h2 class="tab section-title" data-target="#creaters">Создатели</h2>
 				</div><!-- /.tabs -->
 
-				<div class="tabs-content">
+				<div class="tabs-content visible" id="actors">
 					<div class="card">
 						<img src="img/actors/actor-1.png" alt="фото Кэрри Кун" class="card-img">
 						<div class="card-text">
@@ -190,39 +191,76 @@
 						</div><!-- /.card-text -->
 					</div><!-- /.card -->
 				</div><!-- /.tabs-content -->
+
+
+					<!-- Создатели -->
+
+				<div class="tabs-content" id="creaters">
+					<div class="card">
+						<img src="img/actors/actor-7.png" alt="фото" class="card-img">
+						<div class="card-text">
+							<h3 class="name">Эрни Хадсон</h3>
+							<span class="en-name">Ernie Hudson</span>
+						</div><!-- /.card-text -->
+					</div><!-- /.card -->
+
+					<div class="card">
+						<img src="img/actors/actor-8.png" alt="фото" class="card-img">
+						<div class="card-text">
+							<h3 class="name">Финн Вулфард</h3>
+							<span class="en-name">Finn Wolfhard</span>
+						</div><!-- /.card-text -->
+					</div><!-- /.card -->
+				</div><!-- /.tabs-content -->
 			</div><!-- /.container -->
 		</section>
 
 		<section class="news">
 			<div class="container">
 				<h2 class="section-title news-title">Новости по теме</h2>
-				<div class="news-cards">
-					<div class="news-card">
-						<span class="news-card__date">31 марта 2020</span>
-						<h3 class="news-card__title">«Морбиуса» и «Охотников за привидениями» перенесли на следующий год</h3>
-					</div>
 
-					<div class="news-card">
-						<span class="news-card__date">9 декабря 2019</span>
-						<h3 class="news-card__title">Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»</h3>
-					</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="news-card">
+								<span class="news-card__date">31 марта 2020</span>
+								<h3 class="news-card__title">«Морбиуса» и «Охотников за привидениями» перенесли на следующий год</h3>
+							</div><!-- /.news-card -->
+						</div><!-- /.swiper-slide -->
 
-					<div class="news-card">
-						<span class="news-card__date">11 ноября 2019</span>
-						<h3 class="news-card__title">Новые «Охотники за привидениями» обзавелись названием</h3>
-					</div>
+						<div class="swiper-slide">
+							<div class="news-card">
+								<span class="news-card__date">9 декабря 2019</span>
+								<h3 class="news-card__title">Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»</h3>
+							</div><!-- /.news-card -->
+						</div><!-- /.swiper-slide -->
 
-					<div class="news-card">
-						<span class="news-card__date">19 октября 2019</span>
-						<h3 class="news-card__title">Завершились съёмки новых «Охотников за привидениями»</h3>
-					</div><!-- /.news-card -->
-				</div><!-- /.news-cards -->
+						<div class="swiper-slide">
+							<div class="news-card">
+								<span class="news-card__date">11 ноября 2019</span>
+								<h3 class="news-card__title">Новые «Охотники за привидениями» обзавелись названием</h3>
+							</div><!-- /.news-card -->
+						</div><!-- /.swiper-slide -->
+
+						<div class="swiper-slide">
+							<div class="news-card">
+								<span class="news-card__date">19 октября 2019</span>
+								<h3 class="news-card__title">Завершились съёмки новых «Охотников за привидениями»</h3>
+							</div><!-- /.news-card -->
+						</div><!-- /.swiper-slide -->
+					</div><!-- /.swiper-wrapper -->
+
+					<button class="button-next">
+						<img src="img/arrow.svg" alt="Следующий слайд">
+					</button>
+				</div><!-- /.swiper-container -->
 			</div><!-- /.container -->
 		</section>
 	</main>
 
 	<script src="libs/jquery-3.5.1.min.js"></script>
 	<script src="libs/jquery.fancybox.min.js"></script>
+	<script src="libs/swiper.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
