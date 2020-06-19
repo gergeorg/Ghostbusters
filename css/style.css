@@ -408,6 +408,9 @@ ul {
 	z-index: 999;
 }
 
+.tab {
+	cursor: pointer;
+}
 
 
 
